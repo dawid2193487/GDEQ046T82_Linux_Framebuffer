@@ -406,7 +406,7 @@ static int gdeq046t82_probe(struct spi_device *spi)
 
 	spi_set_drvdata(spi, drm);
 
-	drm_fbdev_generic_setup(drm, 0);
+	drm_fbdev_ttm_setup(drm, 0);
 
 	pr_info("gdeq046t82: Registered DRM Device as Tiny DRM.\n");
 
